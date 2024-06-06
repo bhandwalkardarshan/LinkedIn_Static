@@ -1,0 +1,378 @@
+body{
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F4F2EE;
+    font-family: 'LinkedIn Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: gray;
+}
+
+
+.search-container input[type="text"] {
+    width: 100%;
+    /* box-sizing: border-box; */
+    font-size: 8px;
+    height: 16px;
+    position: relative;
+    top: -2px;
+    width: 150%;
+    border: none;
+    background-color: #EDF3F8;
+}
+
+
+
+.nav-left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    background-color: #FFFFFF;
+    margin: auto;
+    height: 40px;
+    align-items: center;
+}
+.nav-wrapper{
+    background-color: #FFFFFF;
+    margin-bottom: 1rem;
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-right > div{
+    display: block;
+    line-height: 0;
+    text-align: center;
+}
+
+.nav-right > div:hover{
+    color: darkgray;
+}
+.nav-right>div>p, .profile-pic span{
+    font-size:8px;
+}
+
+.vertical-line {
+    width: 1px;
+    height: 25px; 
+    background-color: rgb(150, 149, 149); 
+    border: none;
+}
+
+.profile-pic div{
+    /* width: 14px; */
+    
+    /* display: flex;
+    align-items: center; */
+    /* gap: 55px; */
+    width: 80%;
+    line-height: 5px;
+    position: relative;
+    top: -5px;
+}
+
+.profile-pic img {
+    width: 20px;
+    border-radius: 50%;
+    position: relative;
+    top: 10px;
+}
+
+.leftpanel{
+    text-align: center;
+    width: 12rem;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    height: min-content;
+}
+
+.banner{
+    width: 100%;
+    height: 4rem; 
+    background: rgb(253,64,39);
+    background: linear-gradient(90deg, rgba(253,64,39,1) 26%, rgba(246,245,244,1) 53%, rgba(69,252,78,1) 100%);
+    border-radius: 15px 15px 0 0;
+}
+
+
+.profile-photo{
+    border:1px solid blue;
+    background-color: #FFFFFF;
+    width: 4.5rem;
+    position: relative;
+   
+
+}
+
+.banner img{
+    /* text-align: center; */
+    width: 4.5rem;
+    margin: auto;
+    position: relative;
+    border-radius: 50%;
+    top: 1.5rem;
+    border: 1.5px solid white;
+}
+
+.user-info{
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    border: 1px solid lightgray;
+}
+.user-info h3{
+    font-size: small;
+}
+
+.user-info p{
+    font-size: x-small;
+}
+
+.titles{
+    width: 85%;
+    margin: auto;
+    display: block;
+    justify-content: flex-end;
+    padding-top: 2rem;
+    line-height: 5px;
+    
+    border-bottom: 1px solid rgb(236, 230, 230);
+    background-color: #FFFFFF;
+}
+.titles>h3{
+    color: black;
+}
+.main{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    gap: 1rem;
+}
+
+ .views{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+ 
+}
+.views{
+    
+    border-bottom: 1px solid rgb(236, 230, 230);
+}
+.connection{
+    width: 80%;
+    margin: auto;
+    line-height: 0;
+}
+.connection > div{
+    display: flex;
+    justify-content: space-between ;
+}
+.connection>div>p{
+    display: block;
+    text-align: left;
+    font-size: x-small;
+}
+.connection>div:nth-child(2) > p{
+    color: black;
+    font-size: xx-small;
+    font-weight: 650;
+}
+.connection>div:nth-child(3) > p{
+    color: black;
+    font-size: x-small;
+}
+
+.connection>div>p:nth-child(2){
+    color: blue;
+}
+.connection > div:nth-child(3){
+    border-bottom: 1px solid rgb(236, 230, 230);
+}
+.connection > div:nth-child(4){
+    display: block;
+    border-bottom: 1px solid rgb(236, 230, 230);
+    line-height: 3px;
+}
+.connection > div:nth-child(5){
+    display: flex;
+    justify-content: flex-start;
+}
+.connection svg{
+    position: relative;
+    top: 5px;
+    padding-left: 5px;
+}
+.recent{
+    border: 1px solid rgb(236, 230, 230);
+    border-radius: 12px;
+    padding: 0 10%;
+    margin-top: 1rem;
+}
+.recent p{
+    text-align: left;
+    font-size: x-small;
+    line-height: 5px;
+}
+
+#bluetext{
+    color: blue;
+}
+
+#groups{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.posts{
+    width: 50%;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    background-color: #F4F2EE;
+   
+}
+.add-post{
+    border: 1px solid lightgray;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+}
+.add-post>div:nth-child(1){
+    display: flex;
+    padding: 8px;
+    justify-content: space-around;
+    align-items: center;
+    align-self: flex-start;
+    
+}
+
+.add-post>div:nth-child(1) img{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.add-post>div:nth-child(1) input{
+    width: 80%;
+    height: 1.5rem;
+    border-radius: 25px;
+    font-size: x-small;
+    padding-left: 10px;
+    border: 1px solid gray;
+}
+
+.feed-btns{
+    display: flex;
+    justify-content: space-around;
+}
+.feed-media i{
+    color: #378FE9;
+}
+.feed-event i{
+    color: #C37D16;
+}
+.feed-article i{
+    color: #E06847;
+}
+.feed-btns a{
+    text-decoration: none;
+}
+.feed-btns h3{
+    font-size: small;
+    color: gray;
+    font-size: 10px;
+    font-weight: 400;
+}
+.feed{
+    background-color: #F4F2EE;
+    margin-top: 1rem;
+}
+.feed-post{
+    margin-bottom: 1rem;
+    background-color: #FFFFFF;
+}
+.post-header > div, .post-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+.post-header > div > div >img{
+    width: 36px;
+    margin-right: 5px;
+}
+.post-header > div > div >a{
+    text-decoration: none;
+    color: darkgray;
+    font-size: x-small;
+    font-weight: 600;
+}
+.post-header > div > div {
+    font-size: xx-small;
+    line-height: 3px;
+}
+.post-more{
+    display: flex;
+    width: 10%;
+    gap: 1rem;
+}
+.post-content{
+    width: 100%;
+}
+.post-content >img{
+    width: 100%;
+}
+
+.post-response, .post-reaction, .post-sharing{
+    display: flex;
+    gap: 5px;
+    font-size: xx-small;
+}
+.post-response{
+    justify-content: space-between;
+    padding: 0 5px;
+}
+.post-options{
+    display: flex;
+    justify-content: space-around;
+    font-size: x-small;
+    gap: 5px;
+}
+.post-options>div{
+    padding: 0 10px;
+}
+.post-options>div:hover{
+    background-color: rgb(230, 229, 229);
+}
+
+.news>div:first-child {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+.info-icon{
+    font-size: 12px;
+}
+.info-icon:hover{
+    cursor: pointer;
+}
+.news{
+    background-color: #FFFFFF;
+    width: 12rem;
+}
+.news h5{
+    font-weight: 500;
+}
+.news-item li{
+    font-size: 10px;
+    font-weight: 700;
+    color: rgb(104, 102, 102);
+}
+.news-item span{
+    font-size: 8px;
+}

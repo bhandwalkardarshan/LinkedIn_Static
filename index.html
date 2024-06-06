@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linked In</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- navbar -->
+    <section class="nav-wrapper">
+        <nav>
+            <div class="nav-left">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="#0A66C2" class="mercado-match" width="24" height="24" focusable="false">
+                    <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
+                </svg>
+                <div class="search-container">
+                    <input type="text" placeholder="Search...">
+                </div>
+            </div>
+            <div class="nav-right">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+                        <path d="M23 9v2h-2v7a3 3 0 01-3 3h-4v-6h-4v6H6a3 3 0 01-3-3v-7H1V9l11-7 5 3.18V2h3v5.09z"></path>
+                      </svg>
+                      <p>Home</p>
+                </div>
+          
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+                        <path d="M12 16v6H3v-6a3 3 0 013-3h3a3 3 0 013 3zm5.5-3A3.5 3.5 0 1014 9.5a3.5 3.5 0 003.5 3.5zm1 2h-2a2.5 2.5 0 00-2.5 2.5V22h7v-4.5a2.5 2.5 0 00-2.5-2.5zM7.5 2A4.5 4.5 0 1012 6.5 4.49 4.49 0 007.5 2z"></path>
+                      </svg>
+                    <p>My Network</p>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+                        <path d="M17 6V5a3 3 0 00-3-3h-4a3 3 0 00-3 3v1H2v4a3 3 0 003 3h14a3 3 0 003-3V6zM9 5a1 1 0 011-1h4a1 1 0 011 1v1H9zm10 9a4 4 0 003-1.38V17a3 3 0 01-3 3H5a3 3 0 01-3-3v-4.38A4 4 0 005 14z"></path>
+                      </svg>
+                    <p>Jobs</p>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+                        <path d="M16 4H8a7 7 0 000 14h4v4l8.16-5.39A6.78 6.78 0 0023 11a7 7 0 00-7-7zm-8 8.25A1.25 1.25 0 119.25 11 1.25 1.25 0 018 12.25zm4 0A1.25 1.25 0 1113.25 11 1.25 1.25 0 0112 12.25zm4 0A1.25 1.25 0 1117.25 11 1.25 1.25 0 0116 12.25z"></path>
+                      </svg>
+                      <p>Messaging</p>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="16" height="16" focusable="false">
+                        <path d="M22 19h-8.28a2 2 0 11-3.44 0H2v-1a4.52 4.52 0 011.17-2.83l1-1.17h15.7l1 1.17A4.42 4.42 0 0122 18zM18.21 7.44A6.27 6.27 0 0012 2a6.27 6.27 0 00-6.21 5.44L5 13h14z"></path>
+                      </svg>
+                      <p>Notifications</p>
+                </div>
+                <hr class="vertical-line">
+                <div class="profile-pic">
+                    <div >
+                        <img src="assets/profilePic.webp" alt="Profile Pic">     
+                        <span>Try Premium Free for 1 Month</span>
+                    </div>
+                    
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- left panel -->
+    <!-- user info -->
+    <section class="main">
+        <section class="leftpanel">
+            <div class="user-info">
+                <div class="banner">
+                    <img src="assets/profilePic.webp" alt="Profile Pic">    
+                </div>
+                <div class="titles">
+                    <h3>Peter Parker</h3>
+                    <p>Software Engineer</p>
+                </div>
+                <div class="connection">
+                    <div>
+                        <p>connections</p>
+                        <p>30</p>
+                    </div>
+                    <div>
+                        <p>Grow your network</p>
+                    </div>
+                    <div>
+                        <p>Who viewed your profile</p>
+                        <p>30</p>
+                    </div>
+                    <div>
+                        <p>Access exclusive tools and sights</p>
+                        <p>Try premium for one month</p>
+                    </div>
+                    <div>
+                        <p ><svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                        <symbol id="bookmark-fill-small" viewBox="0 0 16 16">
+                            <path d="M2 2v12l6-3.2L14 14V2z"/>
+                        </symbol>
+                        </svg>
+                    
+                        <!-- Use the symbol -->
+                        <svg role="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 16 16" data-supported-dps="16x16" data-test-icon="bookmark-fill-small">
+                        <use href="#bookmark-fill-small" width="14" height="16"></use>
+                        </svg>
+                        My items
+                    </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="recent">
+                <p>Recent</p>
+                <p># Tensorflow</p>
+                <p># Tensorflow</p>
+                <p># Tensorflow</p>
+                <p># Tensorflow</p><p># Tensorflow</p>
+                <p id="bluetext">Groups</p>
+                <p id="groups">
+                    <!-- Define the symbol -->
+                    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                        <symbol id="people-medium" viewBox="0 0 36 36">
+                        <!-- Define the shape of the people icon here -->
+                        <circle cx="9" cy="8" r="4"/>
+                        <path d="M16 14c-2.7 0-8 1.3-8 4v2h16v-2c0-2.7-5.3-4-8-4zm-6.5 0c-1.5 0-4.5.8-4.5 2.5v1.5h3v-1c0-.6.4-1 1-1h1.8c-1.4-1-2.8-2-2.8-2zm3.5-5.5C13 5.6 12.4 4 11 4c-1.4 0-2 .6-2 2.5S9.6 9 11 9c1.4 0 2-.6 2-2.5zm5 3.8c-.6 0-1 .4-1 1v1c0 .6.4 1 1 1h1.5c1.5 0 3-.8 3-2.5v-1.5h-3v1c0 .6-.4 1-1 1h-1.5zm.5-1.8c1.4 0 2-.6 2-2.5S19.4 5 18 5c-1.4 0-2 .6-2 2.5S16.6 9 18 9z"/>
+                        </symbol>
+                    </svg>
+
+                    <!-- Use the symbol -->
+                    <svg role="none" aria-hidden="true" class="mn-community-summary__entity-info-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" data-supported-dps="24x24" data-test-icon="people-medium">
+                        <use href="#people-medium" width="24" height="24"></use>
+                    </svg> Tensorflow
+                </p>
+                <p id="groups">
+                    <!-- Define the symbol -->
+                    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                        <symbol id="people-medium" viewBox="0 0 24 24">
+                        <!-- Define the shape of the people icon here -->
+                        <circle cx="9" cy="8" r="4"/>
+                        <path d="M16 14c-2.7 0-8 1.3-8 4v2h16v-2c0-2.7-5.3-4-8-4zm-6.5 0c-1.5 0-4.5.8-4.5 2.5v1.5h3v-1c0-.6.4-1 1-1h1.8c-1.4-1-2.8-2-2.8-2zm3.5-5.5C13 5.6 12.4 4 11 4c-1.4 0-2 .6-2 2.5S9.6 9 11 9c1.4 0 2-.6 2-2.5zm5 3.8c-.6 0-1 .4-1 1v1c0 .6.4 1 1 1h1.5c1.5 0 3-.8 3-2.5v-1.5h-3v1c0 .6-.4 1-1 1h-1.5zm.5-1.8c1.4 0 2-.6 2-2.5S19.4 5 18 5c-1.4 0-2 .6-2 2.5S16.6 9 18 9z"/>
+                        </symbol>
+                    </svg>
+
+                    <!-- Use the symbol -->
+                    <svg role="none" aria-hidden="true" class="mn-community-summary__entity-info-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" data-supported-dps="24x24" data-test-icon="people-medium">
+                        <use href="#people-medium" width="24" height="24"></use>
+                    </svg> Tensorflow
+                </p>
+                <p id="bluetext">Followed Hashtags</p>
+                <p># Tensorflow</p>
+                <p># Tensorflow</p>
+            </div>
+        </section>
+        <section class="posts">
+            <section class="add-post">
+                <div>
+                    <img src="assets/profilePic.webp" alt="Profile Picture">
+                    <input type="text" id="new-post" placeholder="What's on your mind?">
+                </div>
+                <div class="feed-btns">
+                    <div class="feed-media btn">
+                        <a href="https://www.linkedin.com/feed/">
+                            <h3>
+                                <span>
+                                    <i class="fa-regular fa-image"></i>
+                                </span>
+                                Media
+                            </h3>
+                        </a>
+                    </div>
+                    <div class="feed-event btn">
+                        <a href="https://www.linkedin.com/feed/?createEvent=true">
+                            <h3>
+                                <span>
+                                    <i class="fa-regular fa-calendar-check"></i>
+                                </span>
+                                Event
+                            </h3>
+                        </a>
+                    </div>
+                    <div class="feed-article btn">
+                        <a href="https://www.linkedin.com/article/new/">
+                            <h3>
+                                <span>
+                                    <i class="fa-regular fa-newspaper"></i>
+                                </span>
+                                Write article
+                            </h3>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="feed">
+                <div class="feed-post">
+                    <div class="post-header">
+                        <div>
+                            <div>
+                                <img src="assets/myntra_icon.webp" alt="icon">
+                            </div>
+                            <div>
+                                <a href="#">Myntra Fashion</a>
+                                <p>792456 Followers</p>
+                                <p>Promoted</p>
+                            </div>
+                        </div>
+                        <div class="post-more">
+                            <span>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-xmark"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <img src="assets/IPL_MI_Myntra.jpg" alt="post image">
+                    </div>
+                    <div class="post-footer">
+                        <div class="post-response">
+                            <div class="post-reaction">
+                                <p class="icon">
+                                    <span>
+                                        <i class="fa-regular fa-thumbs-up"></i>
+                                    </span>
+                                </p>
+                                <p>
+                                    Akash Lonari and 24654 others
+                                </p>
+                            </div>
+                            <div class="post-sharing">
+                                <p class="post-comment">
+                                    <span>562</span>
+                                    comments
+                                </p>
+                                <p class="post-repost">
+                                    <span>1</span>
+                                    repost
+                                </p>
+                            </div>
+                        </div>
+                        <div class="post-options">
+                            <div>
+                                <p>
+                                    <span>
+                                        <i class="fa-solid fa-thumbs-up"></i>
+                                    </span>
+                                    Like
+                                </p>
+                            </div>
+                            <div >
+                                <p>
+                                    <span>
+                                        <i class="fa-solid fa-comment"></i>
+                                    </span>
+                                    Comment
+                                </p>
+                            </div>
+                            <div >
+                                <p>
+                                    <span>
+                                        <i class="fa-solid fa-repeat"></i>
+                                    </span>
+                                    Repost
+                                </p>
+                            </div>
+                            <div >
+                                <p>
+                                    <span>
+                                        <i class="fa-solid fa-paper-plane"></i>
+                                    </span>
+                                    Share
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="feed-post">
+                    <div class="post-header">
+                        <div>
+                            <div>
+                                <img src="assets/myntra_icon.webp" alt="icon">
+                            </div>
+                            <div>
+                                <a href="#">Myntra Fashion</a>
+                                <p>792456 Followers</p>
+                                <p>Promoted</p>
+                            </div>
+                        </div>
+                        <div class="post-more">
+                            <span>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-xmark"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <img src="assets/IPL_CSK_Myntra.jpg" alt="post image">
+                    </div>
+                    <div class="post-footer">
+                        <div class="post-response">
+                            <div class="post-reaction">
+                                <p class="icon">
+                                    <span>
+                                        <i class="fa-regular fa-thumbs-up"></i>
+                                    </span>
+                                </p>
+                                <p>
+                                    Akash Lonari and 24654 others
+                                </p>
+                            </div>
+                            <div class="post-sharing">
+                                <p class="post-comment">
+                                    <span>562</span>
+                                    comments
+                                </p>
+                                <p class="post-repost">
+                                    <span>1</span>
+                                    repost
+                                </p>
+                            </div>
+                        </div>
+                        <div class="post-options">
+                            <div>
+                                <p>
+                                    <span>
+                                        <i class="fa-solid fa-thumbs-up"></i>
+                                    </span>
+                                    Like
+                                </p>
+                            </div>
+                            <div >
+                                <p>
+                                    <span>
+                                        <i class="fa-solid fa-comment"></i>
+                                    </span>
+                                    Comment
+                                </p>
+                            </div>
+                            <div >
+                                <p>
+                                    <span>
+                                        <i class="fa-solid fa-repeat"></i>
+                                    </span>
+                                    Repost
+                                </p>
+                            </div>
+                            <div >
+                                <p>
+                                    <span>
+                                        <i class="fa-solid fa-paper-plane"></i>
+                                    </span>
+                                    Share
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feed-post">
+                    <div class="post-header">
+                        <div>
+                            <div>
+                                <img src="assets/myntra_icon.webp" alt="icon">
+                            </div>
+                            <div>
+                                <a href="#">Myntra Fashion</a>
+                                <p>792456 Followers</p>
+                                <p>Promoted</p>
+                            </div>
+                        </div>
+                        <div class="post-more">
+                            <span>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </span>
+                            <span>
+                                <i class="fa-solid fa-xmark"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <img src="assets/IPL_RCB_Myntra.jpg" alt="post image">
+                    </div>
+                    <div class="post-footer">
+                        <div class="post-response">
+                            <div class="post-reaction">
+                                <p class="icon">
+                                    <span>
+                                        <i class="fa-regular fa-thumbs-up"></i>
+                                    </span>
+                                </p>
+                                <p>
+                                    Akash Lonari and 24654 others
+                                </p>
+                            </div>
+                            <div class="post-sharing">
+                                <p class="post-comment">
+                                    <span>562</span>
+                                    comments
+                                </p>
+                                <p class="post-repost">
+                                    <span>1</span>
+                                    repost
+                                </p>
+                            </div>
+                        </div>
+                        <div class="post-options">
+                            <div>
+                                <p>
+                                    <span>
+                                        <i class="fa-solid fa-thumbs-up"></i>
+                                    </span>
+                                    Like
+                                </p>
+                            </div>
+                            <div >
+                                <p>
+                                    <span>
+                                        <i class="fa-solid fa-comment"></i>
+                                    </span>
+                                    Comment
+                                </p>
+                            </div>
+                            <div >
+                                <p>
+                                    <span>
+                                        <i class="fa-solid fa-repeat"></i>
+                                    </span>
+                                    Repost
+                                </p>
+                            </div>
+                            <div >
+                                <p>
+                                    <span>
+                                        <i class="fa-solid fa-paper-plane"></i>
+                                    </span>
+                                    Share
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="rightpanel">
+            <section class="news">
+                <div>
+                    <h5>LinkedIn News</h5>
+                    <div class="info-icon">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+                </div>
+                <div>
+                    <ul>
+                        <div class="news-item">
+                            <li>India crosses 3,58,456 daily cases</li>
+                            <span>10h ago - 5043 readers</span>
+                        </div>
+                        <div class="news-item">
+                            <li>Global stock markets surge after positive economic data</li>
+                            <span>2h ago - 7890 readers</span>
+                        </div>
+                        <div class="news-item">
+                            <li>New species of dinosaur discovered in Argentina</li>
+                            <span>5h ago - 2301 readers</span>
+                        </div>
+                        <div class="news-item">
+                            <li>Tech giants unveil new AI-driven tools for businesses</li>
+                            <span>1h ago - 1546 readers</span>
+                        </div>
+                    </ul>
+                </div>
+            </section>
+            <section class="news">
+                <div>
+                    <h5>Finance News</h5>
+                    <div class="info-icon">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+                </div>
+                <div>
+                    <ul>
+                        <div class="news-item">
+                            <li>Federal Reserve announces interest rate hike</li>
+                            <span>3h ago - 6789 readers</span>
+                        </div>
+                        <div class="news-item">
+                            <li>Bitcoin hits new all-time high amid market frenzy</li>
+                            <span>6h ago - 8456 readers</span>
+                        </div>
+                        <div class="news-item">
+                            <li>European Central Bank holds steady on rates</li>
+                            <span>8h ago - 4023 readers</span>
+                        </div>
+                        <div class="news-item">
+                            <li>Wall Street rebounds as tech stocks rally</li>
+                            <span>1h ago - 7321 readers</span>
+                        </div>
+                    </ul>
+                </div>
+            </section>
+        </section>
+    </section>
+
+</body>
+</html>
